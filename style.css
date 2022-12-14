@@ -1,0 +1,491 @@
+/*    Importing Font     */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Colors */
+  --primary-color: hsl(235, 25%, 18%);
+  --nav-color: hsl(232, 25%, 16%);
+  --text-color: hsl(215, 67%, 96%);
+  --text-color-second: hsl(215, 67%, 85%);
+  --svg-color: hsl(356, 100%, 64%);
+  --card-color: hsl(235, 20%, 21%);
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  /*  Font Family */
+  --ff-poppins: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-weight: var(--fw-regular);
+  color: var(--grayishBlue);
+  line-height: 1.6rem;
+}
+
+body {
+  height: 100%;
+  font-family: var(--ff-poppins);
+  font-size: 18px;
+  background-color: var(--primary-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.header {
+  background-color: var(--nav-color);
+}
+
+.container {
+  max-width: 1580px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+a .nav-logo img {
+  height: 2.7rem;
+  width: auto;
+}
+
+.nav-link {
+  transition: 0.5s ease;
+}
+.nav-link:hover {
+  color: var(--svg-color);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--text-color);
+}
+
+.links {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  left: 3rem;
+  top: 10rem;
+  font-size: 30px;
+  transition: 0.4s ease;
+}
+
+.main {
+  padding-top: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.h1-main {
+  color: var(--text-color);
+  font-size: 4rem;
+  transition: 0.3s ease;
+}
+
+.p-main {
+  color: var(--text-color-second);
+  max-width: 44rem;
+  display: flex;
+  transition: 0.3s ease;
+}
+
+.main-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  background: hsl(356, 100%, 64%);
+  color: #fff;
+}
+
+svg {
+  margin: 0 0 0 10px;
+}
+
+.main-btn:hover svg {
+  margin: 0 0 0 25px;
+  transition: 0.3s;
+}
+
+.main-btn:not(:hover) svg {
+  transition: 0.3s;
+}
+
+.main-btn:active {
+  transform: scale(0.9, 0.9);
+  transition: 200ms;
+}
+
+.main-btn:not(:active) {
+  transition: 200ms;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.active-dots {
+  background-color: var(--svg-color);
+}
+
+.dots div {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--svg-color);
+  border-radius: 50%;
+  gap: 3rem;
+}
+
+.dots:not(:last-child)::after {
+  content: "";
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  height: 4rem;
+  width: 2px;
+  background-color: gray;
+}
+
+.about {
+  width: 100%;
+  position: relative;
+  top: 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services {
+  color: var(--text-color-second);
+  font-weight: 500;
+}
+
+.skills {
+  color: var(--svg-color);
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 3rem;
+}
+
+.skills::after {
+  content: "";
+  display: flex;
+  width: 8rem;
+  height: 5px;
+  background-color: var(--svg-color);
+  margin: 10px 0 24px 0;
+}
+
+.cards-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards {
+  position: relative;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  min-height: 10rem;
+  gap: 1rem;
+  background-color: var(--card-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 16px;
+}
+
+.card-logo {
+  font-size: 42px;
+  color: var(--svg-color);
+}
+
+.card-title {
+  color: var(--text-color-second);
+}
+
+.card-p {
+  color: var(--text-color);
+}
+
+.cards {
+  width: 90%;
+  border-radius: 5px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 30rem;
+  height: 55rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.h1-contact {
+  color: var(--svg-color);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.h1-contact::after {
+  content: "";
+  display: flex;
+  width: 30%;
+  height: 5px;
+  background-color: var(--svg-color);
+  margin: 10px 0 24px 0;
+}
+
+.input-contact {
+  width: 30rem;
+  height: 5rem;
+  border: 2px solid transparent;
+  outline: none;
+  border-bottom: 2px solid var(--nav-color);
+  caret-color: #3f3f3f;
+  background-color: var(--card-color);
+  padding: 5px 0 5px 15px;
+  transition: 0.5s linear;
+  font-family: monospace;
+  font-size: 24px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.input-contact:focus {
+  border: 2px solid var(--svg-color);
+  caret-color: var(--svg-color);
+  color: var(--svg-color);
+  box-shadow: 4px 4px 10px #070707;
+}
+
+.input:focus::placeholder {
+  color: var(--svg-color);
+}
+
+.contact-btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
+  background: hsl(356, 100%, 64%);
+  color: white;
+  width: 10rem;
+  padding: 0.7em 1em;
+  padding-left: 1.4em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.contact-btn span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-btn svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-btn:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.contact-btn:hover svg {
+  transform: translateX(1.5em) rotate(45deg) scale(1.1);
+}
+
+.contact-btn:hover span {
+  transform: translateX(7em);
+}
+
+.contact-btn:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--nav-color);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 99;
+  }
+
+  .nav-item {
+    margin: 16px;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .h1-main {
+    font-size: 3rem;
+    width: 80%;
+    transition: 0.3s ease;
+  }
+
+  .p-main {
+    width: 80%;
+    transition: 0.3s ease;
+    font-size: 18px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .links {
+    all: unset;
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    top: 18rem;
+    left: 2rem;
+    font-size: 28px;
+    transition: 0.4s ease;
+  }
+
+  .input-contact {
+    width: auto;
+    height: 3.6rem;
+    margin-right: 18px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

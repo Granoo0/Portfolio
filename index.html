@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--    AOS Animations CSS Link -->
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!--     Style Sheet Link    -->
+    <link rel="stylesheet" href="style.css" />
+    <!--     Shortcut Icon       -->
+    <link rel="shortcut icon" type="image/jpg" href="img/tab.png" />
+    <title>Granit`s Portfolio</title>
+  </head>
+  <body>
+    <!--    Header     -->
+    <header class="header">
+      <!--    Nav     -->
+      <nav class="navbar container">
+        <a href="#">
+          <picture class="nav-logo">
+            <source media="(min-width:768px)" srcset="img/logo.png" />
+            <img src="img/logo-resized.png" alt="Flowers" style="width: auto" />
+          </picture>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!--  Links   -->
+    <div
+      class="links"
+      data-aos="fade-up"
+      data-aos-duration="600"
+      data-aos-easing="ease-in-quad"
+    >
+      <a
+        href="https://github.com/Granoo0"
+        target="_blank"
+        title="GitHub"
+        class="github"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/granit-trolli-3b25a821b/"
+        target="_blank"
+        title="Linkedin"
+        class="linkedin"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/granit_trolli"
+        target="_blank"
+        title="Instagram"
+        class="instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+
+    <!--    Main     -->
+    <main
+      class="main container"
+      data-aos="fade-up"
+      data-aos-duration="600"
+      data-aos-easing="ease-in-quad"
+    >
+      <div class="wrapper">
+        <h1 class="h1-main">Hello, I`m Granit Trolli</h1>
+        <p class="p-main">
+          I`m a 22 year old who loves coding, I`ve made this portfolio to
+          showcase some of my skills. I`m eager to learn new things with every
+          challenge and improve myself as a programmer.
+        </p>
+        <button
+          class="main-btn"
+          onclick="location.href='img/granit trolli CV.png' "
+        >
+          My Resume
+          <svg
+            viewBox="0 0 16 16"
+            class="bi bi-arrow-right"
+            fill="currentColor"
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="sections">
+        <a class="dots" href="#"><div class="active-dots"></div></a>
+        <a class="dots" href="#about"><div></div></a>
+        <a class="dots" href="#contact"><div></div></a>
+      </div>
+    </main>
+
+    <section class="about container">
+      <div class="skill-wrapper">
+        <h3 class="services" id="about">Services</h3>
+        <h1 class="skills">My-Skills</h1>
+        <div class="cards-wrapper">
+          <div class="cards" data-aos="zoom-in">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-logo">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <h3 class="card-title">Git Version Control</h3>
+                <p class="card-p">
+                  I can operate fairly good with Git and GitHub.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="card-logo">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <h3 class="card-title">App Design</h3>
+                <p class="card-p">
+                  As much as i love coding i also sketch and design my apps
+                  before building them, so that has helped me improve my
+                  designing skills overall.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="card-logo">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <h3 class="card-title">Back-end Development</h3>
+                <p class="card-p">
+                  I also am familiar with the Back-end Development, i worked
+                  with PHP and MySQL to create a website with a functional
+                  database.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="card-logo">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="card-title">Web Development</h3>
+                <p class="card-p">
+                  I mostly worked and focused on the Front-end so i love coding
+                  websites and improved my Web Developend skills.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="card-logo">
+                  <i class="fa-solid fa-camera"></i>
+                </div>
+                <h3 class="card-title">Photography</h3>
+                <p class="card-p">
+                  Photography is an art, and every chance i get i love to take
+                  pictures of different interesting things, mostly nature and
+                  it`s beauty.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="card-logo">
+                  <i class="fa-brands fa-dev"></i>
+                </div>
+                <h3 class="card-title">Freelancing</h3>
+                <p class="card-p">
+                  I have build custom Websites for friends and fun and they were
+                  pleased with the results, and that helped me gain a lot of
+                  experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sections">
+            <a class="dots" href="#"><div></div></a>
+            <a class="dots" href="#about"><div class="active-dots"></div></a>
+            <a class="dots" href="#contact"><div></div></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <form
+        class="contact-wrapper"
+        data-aos="fade-up-left"
+        data-aos-offset="300"
+      >
+        <h1 class="h1-contact">Connect with me</h1>
+        <input
+          placeholder="Email"
+          class="input-contact"
+          name="text"
+          type="email"
+          required
+        />
+        <input
+          placeholder="Your message"
+          class="input-contact"
+          name="text"
+          type="text"
+        />
+        <button class="contact-btn">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  fill="currentColor"
+                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <span>Send</span>
+        </button>
+      </form>
+      <div class="sections">
+        <a class="dots" href="#"><div></div></a>
+        <a class="dots" href="#about"><div></div></a>
+        <a class="dots" href="#contact"><div class="active-dots"></div></a>
+      </div>
+    </section>
+    <!--    AOS Animations JavaScript Link -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- JavaScript Sheet Link -->
+    <script src="app.js"></script>
+    <script src="scroll.js"></script>
+    <!-- Font Awesome SVG Link -->
+    <script
+      src="https://kit.fontawesome.com/d0e6a78a62.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
